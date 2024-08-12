@@ -1,0 +1,145 @@
+/* For background */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+/*For top text */
+.welcome-message {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a slight background to the text */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*For body text */
+body {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Change to your preferred font */
+}
+
+.title-box {
+    text-align: center; /* Center title text */
+    margin-bottom: 20px; /* Space between title and main content */
+}
+
+.container {
+    max-width: 600px; /* Optional: control the width of the text */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: border around the text */
+    border-radius: 10px; /* Optional: rounded corners */
+    background-color: rgba(249, 249, 249, 0.8); /* Faded background color */
+    font-family: 'Arial Black', sans-serif; /* Change to a bolder font */
+    font-weight: bold; /* Set text to bold */
+    letter-spacing: 0.5px; /* Optional: adjust letter spacing for sharper look */
+    color: #333; /* Change text color if needed */
+}
+
+/*Socials*/
+.button {
+    display: inline-block;
+    width: 100px; /* Set the width of the buttons (3 cm = approx. 100px) */
+    height: 40px; /* Set the height of the buttons */
+    margin: 0 10px; /* Space between buttons */
+    text-align: center; /* Center the text in the buttons */
+    line-height: 40px; /* Vertically center the text */
+    font-family: 'Arial Black', sans-serif; /* Use the same font as the container */
+    font-weight: bold; /* Make text bold */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.instagram {
+    background-color: rgb(219, 113, 219); /* Magenta background for Instagram */
+    color: white; /* White text */
+}
+
+.instagram:hover {
+    background-color: darkmagenta; /* Darker magenta on hover */
+}
+
+.twitch {
+    background-color: purple; /* Purple background for Twitch */
+    color: white; /* White text */
+}
+
+.twitch:hover {
+    background-color: darkviolet; /* Darker purple on hover */
+}
+
+.x {
+    background-color: black; /* Black background for Twitter */
+    color: white; /* White text */
+}
+
+.x:hover {
+    background-color: gray; /* Gray on hover */
+}
+
+
+/*Socials_heading*/
+.contact-message {
+    color: white; /* Text color */
+    font-family: 'Arial Black', sans-serif; /* Use the same font as the buttons */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
+    margin-bottom: 10px; /* Space between the text and buttons */
+}
+ 
+/*page2*/
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('assets/bg2.jpg'); /* Update with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    color: white; /* Text color for contrast */
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    /* Removed background-color to eliminate the faded box */
+}
+
+/*quiz*/
+.quiz-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for the quiz */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shake {
+    animation: shake 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+

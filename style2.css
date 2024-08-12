@@ -1,0 +1,33 @@
+/*rewardpage*/
+/* Add this in your styles.css file */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap'); /* Import Kanit font */
+
+body {
+    font-family: 'Kanit', sans-serif; /* Use the Kanit font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: white; /* Set background to white */
+}
+
+.reward-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text */
+}
+
+h2 {
+    margin: 20px 0; /* Add some spacing around the heading */
+    font-size: 24px; /* Adjust font size if needed */
+    color: #333; /* Text color */
+}
+
+#qr-code {
+    margin-top: 20px; /* Space between heading and QR code */
+    width: 200px; /* Set QR code width */
+    height: 200px; /* Set QR code height */
+    object-fit: cover; /* Ensure the QR code maintains its aspect ratio */
+}
