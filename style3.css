@@ -1,0 +1,37 @@
+/*page2*/
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('assets/bg2.jpg'); /* Update with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    color: white; /* Text color for contrast */
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    /* Removed background-color to eliminate the faded box */
+}
+
+/*quiz*/
+.quiz-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for the quiz */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shake {
+    animation: shake 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
