@@ -1,37 +1,58 @@
-/*page2*/
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
     margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url('assets/bg2.jpg'); /* Update with your image path */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    color: white; /* Text color for contrast */
 }
 
 .content {
-    text-align: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    /* Removed background-color to eliminate the faded box */
+    text-align: center;
+    width: 300px; /* Set a max width for the quiz */
 }
 
-/*quiz*/
-.quiz-container {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Light background for the quiz */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#feedback {
+    margin-top: 10px;
+    color: red; /* Color for feedback */
 }
 
 .shake {
     animation: shake 0.5s;
-    animation-timing-function: ease-in-out;
 }
 
 @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
+    0% { transform: translate(1px, 0); }
+    25% { transform: translate(-1px, 0); }
+    50% { transform: translate(1px, 0); }
+    75% { transform: translate(-1px, 0); }
+    100% { transform: translate(0, 0); }
 }
