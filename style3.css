@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('./assets/bg2.jpg'); /* Update this path as necessary */
+    background-image: url('/assets/bg2.jpg'); /* Update this path as necessary */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
