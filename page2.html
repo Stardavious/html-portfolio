@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>???</title>
+    <title>You almost found me.</title>
     <link rel="stylesheet" href="style3.css">
 
     <script>
@@ -17,7 +17,6 @@
             }
         });
     </script>
-    
 </head>
 <body>
     <main class="content">
@@ -31,8 +30,8 @@
     <script>
         const questions = [
             { question: "In which year did Fredbear's Family Diner experience the bite incident?", answer: "1983" },
-            { question: "What is the name of the city in BioShock 2", answer: "Rapture" },
-            { question: "What is the name of Mario's brother", answer: "Luigi" }
+            { question: "What is the name of the city in BioShock 2?", answer: "Rapture" },
+            { question: "What is the name of Mario's brother?", answer: "Luigi" }
         ];
 
         let currentQuestionIndex = 0;
@@ -52,7 +51,10 @@
             const feedbackElement = document.getElementById('feedback');
             const userAnswer = answerElement.value.trim().toLowerCase(); // Use trim() to avoid whitespace issues
 
-            if (userAnswer === questions[currentQuestionIndex].answer) {
+            // Normalize the correct answer in the questions array to lowercase
+            const correctAnswer = questions[currentQuestionIndex].answer.toLowerCase();
+
+            if (userAnswer === correctAnswer) {
                 currentQuestionIndex++;
                 if (currentQuestionIndex < questions.length) {
                     displayQuestion();
