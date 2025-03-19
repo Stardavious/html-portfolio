@@ -95,6 +95,9 @@ body {
     background-color: gray; /* Gray on hover */
 }
 
+.journal:hover {
+    background-color: azure; /* Azure on hover */
+}
 
 /*Socials_heading*/
 .contact-message {
